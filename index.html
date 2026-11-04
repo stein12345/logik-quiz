@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Informatik GK1 am FMSG</title>
+<style>
+:root{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;color:#193732;background:#f2f4ef;--green:#236b59;--line:#dce3dc}*{box-sizing:border-box}body{margin:0}button,input{font:inherit}button{cursor:pointer;touch-action:manipulation;border:0;border-radius:11px;min-height:46px;padding:12px 16px;font-size:13px;font-weight:700}button:focus-visible{outline:3px solid #92b9a4;outline-offset:3px}[hidden]{display:none!important}.entry{min-height:100svh;display:grid;place-items:center;padding:28px 20px;background:radial-gradient(ellipse at 50% 20%,#e3ecd9,transparent 65%),#f2f4ef}.entry-content{width:100%;max-width:560px}.school{text-align:center;font-size:12px;color:#6b7e6b;margin-bottom:30px;font-weight:650}.launch{display:flex;flex-direction:column;align-items:flex-start;position:relative;width:100%;text-align:left;background:#193732;color:#eef5e7;padding:35px 30px;border-radius:25px;box-shadow:0 20px 55px #19373215;min-height:260px}.symbol{font:700 40px ui-monospace,monospace;letter-spacing:-6px;color:#bbd69d;margin-bottom:28px}.launch-title{font-size:clamp(28px,6vw,39px);letter-spacing:-1.2px;line-height:1.15}.launch-detail{font-size:13px;font-weight:450;color:#b2c9b5;margin-top:14px}.arrow{position:absolute;right:28px;top:35px;font-size:29px;color:#bbd69d}.caption{text-align:center;font-size:12px;color:#73826a;margin-top:20px}.welcome{background:white;padding:32px;border:1px solid var(--line);border-radius:24px}.welcome-code,.expression{background:#193732;border-radius:13px;padding:19px;color:#e2f1da;font:14px/1.9 ui-monospace,Consolas,monospace;overflow-wrap:anywhere;white-space:pre-wrap;display:block}.welcome-code{margin-bottom:24px}.welcome-code span{color:#b7d79b}.welcome p{font-size:15px;color:#5b6e62;line-height:1.9}.welcome .closing{color:#233e31;font-weight:650}.primary{background:var(--green);color:white;margin-left:auto}.wide{width:100%;margin-top:12px;min-height:51px}.back-entry{background:transparent;color:#7b8b77;display:block;margin:10px auto 0;font-size:12px}header{max-width:1050px;margin:auto;padding:30px 20px 23px}.brand{display:flex;align-items:center;gap:10px;font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#657b6a}.logo{display:grid;place-items:center;width:31px;height:31px;background:#193732;color:#d9edbd;border-radius:10px;font-size:17px;letter-spacing:-3px;padding-right:3px}h1{font-size:clamp(25px,5vw,38px);letter-spacing:-1.3px;margin:17px 0 9px}.intro{font-size:13px;color:#718077;line-height:1.7;margin:0}.layout{max-width:1050px;padding:0 20px;margin:0 auto 40px;display:grid;grid-template-columns:minmax(0,1fr) 215px;gap:22px;align-items:start}.card{background:white;border:1px solid var(--line);border-radius:22px;box-shadow:0 12px 45px #263d2e05}.toolbar{display:flex;justify-content:space-between;gap:10px;align-items:center;background:#fafbf8;border-bottom:1px solid var(--line);border-radius:22px 22px 0 0;padding:12px 20px;position:sticky;top:0;z-index:3}.toolbar span{font-size:11px;color:#72816c;font-weight:700}.overview{background:#e8eee3;color:#345740;font-size:12px;min-height:39px}.inner{padding:28px}.meta{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:23px}.badge{font-size:11px;font-weight:750;border-radius:20px;padding:6px 10px}.leicht{background:#edf3e4;color:#56733e}.mittel{background:#fbf1df;color:#966f2b}.schwer{background:#eee9f6;color:#7e6398}.counter{font:11px ui-monospace,monospace;color:#7d8b83}h2{font-size:25px;letter-spacing:-.8px;margin:0 0 10px;line-height:1.3}.description{font-size:14px;color:#718077;line-height:1.7;margin:0 0 22px}.values{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:13px}.values code{font-size:12px;background:#f2f5f0;border-radius:6px;padding:6px 9px;color:#5c7061}.expression{font-size:16px;margin:0 0 21px}.options{display:grid;gap:10px}.option{display:flex;align-items:center;gap:12px;padding:15px;border:1.5px solid #e0e6df;border-radius:12px;cursor:pointer;min-height:55px}.option:has(input:checked){background:#eff5e9;border-color:#5e886a}.option:focus-within{outline:3px solid #a3bfa3;outline-offset:2px}.option input{accent-color:var(--green);width:18px;height:18px;flex-shrink:0;margin:0}.option code{font:13px/1.8 ui-monospace,Consolas,monospace;overflow-wrap:anywhere}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:25px}.secondary{background:#f0f3ed;color:#536b5c}.skip{background:transparent;color:#788576}button:disabled{opacity:.38;cursor:default}.footnote{margin:17px 0 0;font-size:11px;line-height:1.7;color:#798572}aside{position:sticky;top:18px;padding:18px 0 0 3px}.aside-title{font-size:12px;font-weight:750}.progress-number{font-size:36px;font-weight:750;letter-spacing:-1.5px;margin:9px 0 5px}.progress-number small{font-size:14px;color:#8a978b;letter-spacing:0;font-weight:500}progress{width:100%;height:5px;border:0;display:block;border-radius:10px;overflow:hidden;accent-color:var(--green);background:#dce5d7;margin:12px 0}progress::-webkit-progress-bar{background:#dce5d7}progress::-webkit-progress-value{background:var(--green)}.remaining{font-size:11px;color:#7e8b7c}.group{margin-top:23px}.group-label{font-size:11px;font-weight:750;color:#627564;margin-bottom:10px}.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:5px}.step{padding:0;min-height:29px;border-radius:7px;background:#e7ece3;color:#73816b;font-size:11px;border:1.5px solid transparent}.step.done{background:#cce0bd;color:#335a38}.step.skipped{background:#efe0bf;color:#8b713c}.step.wrong{background:#f6dcd5;color:#a34e3d}.step.current{outline:2px solid var(--green);outline-offset:2px}.legend{font-size:10px;color:#77846f;margin:18px 0;line-height:1.9}.dot{width:6px;height:6px;border-radius:50%;display:inline-block;margin-right:5px}.reset{background:transparent;border:1px solid #d6dfd0;color:#72816c;width:100%;font-size:11px;min-height:38px}.box{padding:18px;background:#f1f5eb;border-radius:13px;font-size:14px;line-height:1.9;margin:19px 0}.alert{padding:13px 15px;background:#fff1eb;border:1px solid #f0d5c8;border-radius:11px;font-size:12px;color:#9b5744;line-height:1.7;margin:0 0 20px}.rows{display:grid;gap:8px;margin:20px 0}.row{width:100%;display:flex;justify-content:space-between;align-items:center;gap:8px;text-align:left;background:#f5f7f2;color:#436049;font-size:12px}.row.wrong{background:#fff0eb;color:#a45441}.review{padding-top:22px;margin-top:24px;border-top:1px solid var(--line)}.review .expression{font-size:13px;margin:12px 0;padding:16px}.review p{font-size:13px;line-height:1.9;overflow-wrap:anywhere}.score{font-size:54px;letter-spacing:-2px;font-weight:750;color:var(--green);margin:20px 0}
+@media(max-width:700px){header{padding:24px 16px 20px}.layout{grid-template-columns:minmax(0,1fr) 49px;gap:8px;padding:0 10px 0 12px}.card{border-radius:17px}.inner{padding:20px 14px}.toolbar{padding:10px;border-radius:17px 17px 0 0}.toolbar span{font-size:9px}.overview{font-size:10px;padding:9px 10px;min-height:37px}h2{font-size:22px}.description{font-size:13px}.expression{font-size:14px;padding:17px 11px}.option{padding:12px 9px;gap:8px}.option code{font-size:12px}.actions{gap:7px}.actions button{font-size:12px;padding:11px}.skip{order:3;width:100%}.primary{flex:1}aside{padding:6px 0 0;top:12px;text-align:center}.aside-title{font-size:0}.aside-title:after{content:'Stand';font-size:9px}.progress-number{font-size:22px;letter-spacing:-1px;margin:9px 0}.progress-number small{font-size:10px;display:block;margin-top:2px}.remaining{font-size:9px;line-height:1.5}.group{margin-top:18px}.group-label{font-size:8px;line-height:1.5}.grid{grid-template-columns:repeat(2,1fr);gap:5px}.step{font-size:9px;min-height:27px;border-radius:6px}.legend{font-size:0;margin:14px 0 8px}.legend div{margin-bottom:4px}.legend .dot{margin:0}.reset{font-size:0;padding:0;min-height:34px}.reset:after{content:'↺';font-size:20px}.row{font-size:11px;padding:11px 9px}.welcome{padding:25px 22px}.welcome p{font-size:14px}.launch{padding:30px 24px}.entry{padding:24px 18px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+/* Breiter Fortschrittsbereich oberhalb der unveränderten Aufgaben. */
+#quizApp .layout{display:flex;flex-direction:column;gap:18px;max-width:850px;padding:22px 20px;margin:0 auto 30px}
+#quizApp .card{width:100%}
+#quizApp aside{position:static;width:100%;padding:22px 24px;background:#e8eee2;border:1px solid #d8e1d0;border-radius:20px;display:grid;grid-template-columns:1fr auto;gap:8px 18px;text-align:left}
+#quizApp .aside-title{font-size:12px;align-self:center}#quizApp .aside-title:after{content:none}
+#quizApp .progress-number{font-size:24px;margin:0;letter-spacing:-1px;text-align:right}
+#quizApp .progress-number small{display:inline;font-size:13px;margin:0;letter-spacing:0}
+#quizApp progress{grid-column:1/-1;height:7px;margin:3px 0}
+#quizApp .remaining{grid-column:1/-1;font-size:12px}
+#quizApp #nav{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+#quizApp .group{margin-top:10px}#quizApp .group-label{font-size:11px;line-height:1.5;margin-bottom:9px}
+#quizApp .grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:7px}
+#quizApp .step{font-size:12px;min-height:40px;border-radius:8px}
+#quizApp .legend{font-size:10px;display:flex;flex-wrap:wrap;gap:5px 14px;grid-column:1/-1;margin:7px 0 2px;line-height:1.7}
+#quizApp .legend div{margin:0}#quizApp .legend .dot{margin-right:5px}
+#quizApp .reset{font-size:11px;width:auto;min-height:36px;grid-column:2;justify-self:end;padding:8px 12px;margin-top:0}
+#quizApp .reset:after{content:none}
+.welcome p{margin:20px 0}.welcome .closing{margin-top:25px;padding-top:20px;border-top:1px solid var(--line)}
+@media(max-width:600px){
+#quizApp .layout{padding:12px;gap:13px}
+#quizApp aside{padding:17px 15px;border-radius:17px;gap:8px 10px}
+#quizApp #nav{grid-template-columns:1fr;gap:3px}
+#quizApp .group{margin-top:7px}
+#quizApp .step{min-height:42px;font-size:13px}
+#quizApp .legend{font-size:10px;gap:4px 12px;margin-top:9px}
+#quizApp .reset{min-height:40px}
+}
+
+/* Kompakter Fortschritt, ohne Legende. */
+#quizApp .layout{gap:10px;padding-top:10px}
+#quizApp aside{padding:12px 16px;gap:4px 12px;border-radius:15px}
+#quizApp .aside-title{font-size:11px}
+#quizApp .progress-number{font-size:18px;letter-spacing:-.5px}
+#quizApp .progress-number small{font-size:11px}
+#quizApp progress{height:4px;margin:2px 0}
+#quizApp .remaining{grid-column:1;font-size:10px;align-self:center}
+#quizApp #nav{gap:14px}
+#quizApp .group{margin-top:3px}
+#quizApp .group-label{font-size:10px;margin-bottom:5px}
+#quizApp .grid{gap:5px}
+#quizApp .step{min-height:31px;font-size:11px;border-radius:6px}
+#quizApp .reset{min-height:28px;padding:4px 8px;font-size:10px;grid-column:2;grid-row:3}
+@media(max-width:600px){
+#quizApp .layout{padding:8px 10px;gap:9px}
+#quizApp aside{padding:10px 12px;gap:3px 10px}
+#quizApp #nav{grid-template-columns:1fr;gap:2px}
+#quizApp .group{display:grid;grid-template-columns:92px minmax(0,1fr);align-items:center;gap:6px;margin-top:3px}
+#quizApp .group-label{font-size:9px;margin:0}
+#quizApp .step{min-height:32px;font-size:11px}
+#quizApp .grid{gap:5px}
+#quizApp .reset{min-height:28px}
+}
+
+#quizApp .toolbar{justify-content:flex-end}
+
+#quizApp .progress-actions{grid-column:2;grid-row:3;display:flex;align-items:center;justify-content:flex-end;gap:7px}
+#quizApp .progress-actions .overview,#quizApp .progress-actions .reset{font-size:10px;min-height:32px;padding:6px 9px;white-space:nowrap;margin:0;width:auto}
+#quizApp .progress-actions .reset{border:1px solid #cdd8c6}
+@media(max-width:380px){#quizApp .progress-actions{gap:4px}#quizApp .progress-actions .overview,#quizApp .progress-actions .reset{padding:6px;font-size:9px}}
+
+.teacher-code{padding:18px;background:#f1f5eb;border:1px solid #dce5d5;border-radius:13px;margin:22px 0}
+.teacher-code label{font-size:14px;font-weight:750}
+.teacher-code p{font-size:12px;color:#64765f;line-height:1.8;margin:8px 0 12px}
+.code-controls{display:flex;gap:8px;flex-wrap:wrap}
+.code-controls input{min-width:0;flex:1 1 130px;border:1px solid #cbd8c4;border-radius:9px;padding:12px;font:16px system-ui;background:white;color:#193732}
+.code-controls input:focus{outline:2px solid #92b9a4;outline-offset:2px}
+.code-controls button{font-size:12px}
+.teacher-code #codeError{color:#a45441;margin:8px 0 0}
+.teacher-code #codeError:empty{display:none}
+@media(max-width:500px){.code-controls{flex-direction:column}.code-controls input{flex:auto;width:100%}.code-controls button{width:100%;margin:0}}
+
+#resetDialog{width:min(420px,calc(100% - 32px));max-height:calc(100svh - 40px);padding:0;border:1px solid #dce3dc;border-radius:21px;background:#fff;color:#193732;box-shadow:0 24px 90px #142f3340}
+#resetDialog::backdrop{background:#122d2d80;backdrop-filter:blur(4px)}
+.reset-dialog-content{padding:27px}
+#resetDialog h2{font-size:23px;margin:0 0 13px}
+#resetDialog p{font-size:14px;line-height:1.8;color:#657668;margin:0}
+.reset-dialog-actions{display:flex;justify-content:flex-end;gap:9px;margin-top:25px;flex-wrap:wrap}
+.reset-dialog-actions .primary{margin-left:0}
+@media(max-width:420px){.reset-dialog-content{padding:23px 20px}.reset-dialog-actions button{flex:1;padding:12px 10px}}
+</style></head><body>
+<section class="entry" id="landing" aria-label="Startseite"><div class="entry-content"><div class="school">Informatik GK1 am FMSG</div><button class="launch" id="launch"><span class="symbol" aria-hidden="true">&&</span><span class="arrow" aria-hidden="true">↗</span><span class="launch-title">Aussagenlogik-Quiz<br>starten</span><span class="launch-detail">Kotlin · 12 Aufgaben · ca. 20 Minuten</span></button><p class="caption">Kleiner Bildschirm. Große Denkarbeit.</p></div></section>
+<section class="entry" id="greeting" aria-label="Begrüßung" hidden><div class="entry-content"><div class="school">Informatik GK1 am FMSG</div><div class="welcome"><div class="welcome-code" tabindex="-1" id="welcomeFocus"><code>computerraum = <span>false</span><br>informatikunterricht = <span>true</span></code></div><p>Heute heißt es: Raum 213 statt MM1. Keine PCs? Kein Problem. Euer innovativer Informatiklehrer hat das Problem zum Bedauern aller Freistundenhoffenden mit dieser HTML-Datei gelöst.</p><p class="closing">Jetzt seid ihr dran: Tippen könnt ihr. Mal sehen, wie es mit Denken aussieht.</p><button class="primary wide" id="start">Quiz starten →</button></div><button class="back-entry" id="landingBack">← Zur Startseite</button></div></section>
+<div id="quizApp" hidden><div class="layout"><aside aria-label="Fortschritt"><div class="aside-title">Dein Fortschritt</div><div class="progress-number"><span id="count">0</span><small> von 12</small></div><progress id="progress" max="12" value="0" aria-label="Beantwortete Aufgaben"></progress><div class="remaining" id="remaining" aria-live="polite"></div><div id="nav"></div><div class="progress-actions"><button class="overview" id="overview">☷ Übersicht</button><button class="reset" id="reset" aria-label="Quiz zurücksetzen" title="Zurücksetzen">↺ Zurücksetzen</button></div></aside><main class="card"><div class="inner" id="main"></div></main></div></div>
+<dialog id="resetDialog" aria-labelledby="resetTitle" aria-describedby="resetDescription">
+<form method="dialog" class="reset-dialog-content">
+<h2 id="resetTitle">Quiz zurücksetzen?</h2>
+<p id="resetDescription">Möchtest du wirklich neu starten? Dein gespeicherter Fortschritt wird gelöscht.</p>
+<div class="reset-dialog-actions"><button class="secondary" id="cancelReset" value="cancel" autofocus>Abbrechen</button><button class="primary" value="reset">Zurücksetzen</button></div>
+</form></dialog>
+<script>
+'use strict';
+const E=(level,e,a,b,c,explanation)=>({type:'eval',level,e,a,b,c,options:['true','false'],explanation});
+const Q=(level,e,options)=>({type:'equiv',level,e,options});
+const tasks=[
+E('Leicht','a && b',true,false,true,'true && false = false'),
+E('Leicht','!a || b',false,false,true,'!false || false = true'),
+E('Mittel','a || b && !c',false,true,true,'false || (true && !true) = false'),
+E('Mittel','!(a && !b) && (c || b)',true,true,false,'!(true && false) && (false || true) = true'),
+E('Schwer','!((a || !b) && !(c && !a)) || (!c && (a || b))',false,true,true,'!((false || false) && !(true && true)) || (false && true) = true'),
+E('Schwer','!(!(a && !b) || (c && !a)) && ((!c || b) || !(a && c))',true,false,true,'!(!(true && true) || (true && false)) && ((false || false) || !(true && true)) = true && false = false'),
+Q('Leicht','!!a',['!a','a','a && !a']),Q('Leicht','a && b',['a || b','!a && !b','b && a']),
+Q('Mittel','!(a || b)',['!a || !b','!a && !b','a && b']),
+Q('Mittel','a && (b || c)',['(a && b) || c','(a || b) && c','(a && b) || (a && c)']),
+Q('Schwer','(a || b) && (!a || c) && (b || c)',['(a && b) || (!a && c)','(!a && b) || (a && c)','(a && c) || b','(a || c) && (!a || b)']),
+Q('Schwer','!((a && !b) || (!a && b)) && (c || !a)',['(a || b) && (!a || !b) && (c || !a)','(a && b) || (!a && !b && c)','(a && b && c) || (!a && !b)','(a && !b && c) || (!a && b)'])];
+const run=(e,a,b,c)=>Function('a','b','c','"use strict";return ('+e+');')(a,b,c);
+const same=(x,y)=>{for(const a of [false,true])for(const b of [false,true])for(const c of [false,true])if(run(x,a,b,c)!==run(y,a,b,c))return false;return true;};
+tasks.forEach(q=>q.answer=q.type==='eval'?(run(q.e,q.a,q.b,q.c)?0:1):q.options.findIndex(o=>same(q.e,o)));
+const answers=Array(12).fill(null),visited=Array(12).fill(false);
+let current=0,screen='question',lastCheck=null,checkedAnswers=null,solved=false,unlocked=false;
+const $=id=>document.getElementById(id),main=$('main');
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const variables=q=>[...new Set(q.e.match(/\b[a-c]\b/g)||[])].sort();
+function values(q){return q.type==='eval'?'<div class="values">'+variables(q).map(k=>'<code>'+k+' = '+q[k]+'</code>').join('')+'</div>':'';}
+const needsWork=i=>lastCheck!==null&&!lastCheck[i],changed=i=>checkedAnswers!==null&&answers[i]!==checkedAnswers[i];
+const STORAGE_KEY='fmsg-aussagenlogik-quiz-v1';
+const TASK_SIGNATURE=JSON.stringify(tasks.map(q=>[q.type,q.e,q.options,q.a,q.b,q.c]));
+let started=false;
+function saveProgress(){
+if(!started)return;
+try{localStorage.setItem(STORAGE_KEY,JSON.stringify({version:1,signature:TASK_SIGNATURE,answers,visited,current,screen,lastCheck,checkedAnswers,solved,unlocked}));}catch(e){}
+}
+function restoreProgress(){
+try{
+const data=JSON.parse(localStorage.getItem(STORAGE_KEY));
+const validAnswers=a=>Array.isArray(a)&&a.length===tasks.length&&a.every((v,i)=>v===null||(Number.isInteger(v)&&v>=0&&v<tasks[i].options.length));
+if(!data||data.version!==1||data.signature!==TASK_SIGNATURE||!validAnswers(data.answers)||!Array.isArray(data.visited)||data.visited.length!==tasks.length||!data.visited.every(v=>typeof v==='boolean')||!Number.isInteger(data.current)||data.current<0||data.current>=tasks.length||!['question','overview','feedback','result'].includes(data.screen)||typeof data.unlocked!=='boolean')return false;
+if(data.checkedAnswers!==null&&!validAnswers(data.checkedAnswers))return false;
+if((data.lastCheck===null)!==(data.checkedAnswers===null))return false;
+if(data.lastCheck!==null&&(!Array.isArray(data.lastCheck)||data.lastCheck.length!==tasks.length||!data.lastCheck.every((v,i)=>typeof v==='boolean'&&v===(data.checkedAnswers[i]===tasks[i].answer))))return false;
+const allCorrect=data.answers.every((v,i)=>v===tasks[i].answer);
+const wasSolved=data.lastCheck!==null&&data.lastCheck.every(Boolean)&&allCorrect;
+if(data.screen==='result'&&!wasSolved&&!data.unlocked)return false;
+if(data.screen==='feedback'&&(data.lastCheck===null||data.lastCheck.every(Boolean)))return false;
+answers.splice(0,answers.length,...data.answers);visited.splice(0,visited.length,...data.visited);
+current=data.current;screen=data.screen;lastCheck=data.lastCheck;checkedAnswers=data.checkedAnswers;solved=wasSolved;unlocked=data.unlocked;started=true;
+return true;
+}catch(e){return false;}
+}
+function clearProgress(){started=false;try{localStorage.removeItem(STORAGE_KEY);}catch(e){}}
+
+function showEntry(id){['landing','greeting','quizApp'].forEach(name=>$(name).hidden=id!==name);window.scrollTo(0,0);}
+$('launch').onclick=()=>{showEntry('greeting');$('welcomeFocus').focus({preventScroll:true});};
+$('landingBack').onclick=()=>{showEntry('landing');$('launch').focus({preventScroll:true});};
+$('start').onclick=()=>{started=true;showEntry('quizApp');render();focus();};
+function sidebar(){const count=answers.filter(a=>a!==null).length;$('count').textContent=count;$('progress').value=count;$('remaining').textContent=(12-count)+' noch offen';$('nav').innerHTML=['Auswerten','Gleichwertigkeit'].map((name,g)=>'<div class="group"><div class="group-label">'+(g+1)+'. '+name+'</div><div class="grid">'+tasks.slice(g*6,g*6+6).map((q,j)=>{const i=g*6+j,state=needsWork(i)?(changed(i)?'skipped':'wrong'):answers[i]!==null?'done':visited[i]?'skipped':'',active=screen==='question'&&current===i;return '<button class="step '+state+(active?' current':'')+'" data-go="'+i+'" aria-label="Aufgabe '+(i+1)+', '+q.level+', '+(needsWork(i)?'bei letzter Prüfung falsch oder offen':answers[i]!==null?'beantwortet':'offen')+'" '+(active?'aria-current="step"':'')+'>'+(i+1)+'</button>';}).join('')+'</div></div>').join('');}
+function render(){saveProgress();sidebar();if(screen==='overview'){showOverview();return;}if(screen==='feedback'){showFeedback();return;}if(screen==='result'){showResult();return;}const q=tasks[current];main.innerHTML='<div class="meta"><span class="badge '+q.level.toLowerCase()+'">'+q.level+'</span><span class="counter">'+String(current+1).padStart(2,'0')+' / 12</span></div><h2 tabindex="-1">'+(q.type==='eval'?'Was kommt heraus?':'Was ist gleichwertig?')+'</h2><p class="description">'+(q.type==='eval'?'Werte den Ausdruck mit den angegebenen Werten aus.':'Finde den Ausdruck, der für jede Belegung von '+variables(q).join(', ')+' denselben Wert ergibt.')+'</p>'+(needsWork(current)?'<div class="alert" role="status">Bei der letzten Prüfung '+(checkedAnswers[current]===null?'nicht beantwortet.':'falsch beantwortet.')+(changed(current)?' Deine Änderung ist gespeichert. Bitte erneut überprüfen.':' Überarbeite deine Antwort.')+'</div>':'')+values(q)+'<code class="expression">'+esc(q.e)+'</code><div class="options" role="radiogroup" aria-label="Antwort zu '+esc(q.e)+'">'+q.options.map((o,i)=>'<label class="option"><input type="radio" name="answer" value="'+i+'" '+(answers[current]===i?'checked ':'')+(solved?'disabled ':'')+'><code>'+esc(o)+'</code></label>').join('')+'</div><div class="actions"><button class="secondary" id="back" '+(current===0?'disabled':'')+'>← Zurück</button>'+(!solved?'<button class="skip" id="skip">Überspringen</button>':'')+'<button class="primary" id="next" '+(answers[current]===null?'disabled':'')+'>'+(current===11?'Zur Übersicht':'Weiter →')+'</button></div><p class="footnote">'+(solved?'Alle Aufgaben wurden richtig gelöst.':'Deine Antworten bleiben beim Wechseln gespeichert. Lösungen werden erst freigeschaltet, wenn alles richtig ist.')+'</p>';main.querySelectorAll('input').forEach(el=>el.onchange=()=>{answers[current]=Number(el.value);saveProgress();$('next').disabled=false;sidebar();const alert=main.querySelector('.alert');if(alert)alert.textContent=changed(current)?'Bei der letzten Prüfung falsch oder offen. Deine Änderung ist gespeichert. Bitte erneut überprüfen.':'Bei der letzten Prüfung falsch oder offen. Überarbeite deine Antwort.';});$('back').onclick=()=>go(current-1);if(!solved)$('skip').onclick=()=>advance(true);$('next').onclick=()=>advance(false);}
+function advance(skip){if(skip)answers[current]=null;visited[current]=true;if(current===11){screen='overview';render();focus();}else go(current+1);}
+function go(i){current=i;screen='question';render();focus();}
+function focus(){const h=main.querySelector('h2');if(h){h.setAttribute('tabindex','-1');h.focus({preventScroll:true});}window.scrollTo({top:0,behavior:'smooth'});}
+function showOverview(){const count=answers.filter(a=>a!==null).length;main.innerHTML='<h2>Deine Übersicht.</h2><p class="description">Springe zu einer Aufgabe oder überprüfe deine Antworten.</p><div class="box"><strong>'+count+' von 12 beantwortet</strong><br>'+(12-count)+' noch offen.'+(lastCheck&&!solved?'<br>Markierungen beziehen sich auf die letzte Prüfung.':'')+'</div><div class="rows">'+tasks.map((q,i)=>{let status=answers[i]===null?'Offen':'Beantwortet';if(needsWork(i))status=changed(i)?'Geändert · erneut prüfen':checkedAnswers[i]===null?'Offen bei Prüfung':'Falsch bei Prüfung';else if(lastCheck)status=changed(i)?'Geändert · erneut prüfen':'Richtig';return '<button class="row '+(needsWork(i)?'wrong':'')+'" data-task="'+i+'"><span>'+String(i+1).padStart(2,'0')+' · '+q.level+'</span><span>'+status+' →</span></button>';}).join('')+'</div><div class="actions">'+((solved||unlocked)?'<button class="primary" id="solutions">Lösungen ansehen</button>':'<button class="primary" id="check">Antworten überprüfen</button>')+'</div>';if(solved||unlocked)$('solutions').onclick=()=>{screen='result';render();focus();};else $('check').onclick=check;}
+function check(){lastCheck=tasks.map((q,i)=>answers[i]===q.answer);checkedAnswers=answers.slice();solved=lastCheck.every(Boolean);screen=solved?'result':'feedback';render();focus();}
+function showFeedback(){const wrong=tasks.map((q,i)=>i).filter(i=>!lastCheck[i]);main.innerHTML='<h2>Verbessere deine Antworten.</h2><p class="description">Einige Aufgaben sind noch falsch oder unbeantwortet. Überarbeite deine Antworten und überprüfe sie erneut, bis du alle Aufgaben richtig gelöst hast.</p><form class="teacher-code" id="codeForm"><label for="teacherCode">Code vom Lehrer?</label><p>Es sei denn, du hast einen Code von deinem Lehrer bekommen. Damit kannst du die Lösungen direkt freischalten.</p><div class="code-controls"><input id="teacherCode" type="text" placeholder="Code eingeben" autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="codeError"><button class="primary" type="submit">Lösungen freischalten</button></div><p id="codeError" role="status" aria-live="polite"></p></form><div class="rows">'+wrong.map(i=>'<button class="row wrong" data-task="'+i+'"><span>Aufgabe '+(i+1)+' · '+tasks[i].level+'</span><span>'+(checkedAnswers[i]===null?'Offen':'Falsch')+' →</span></button>').join('')+'</div><p class="footnote">Die markierten Aufgaben bleiben bis zur nächsten Prüfung gekennzeichnet. Die richtigen Lösungen sind noch verborgen.</p><div class="actions"><button class="primary" id="retry">Zurück zu den Aufgaben →</button></div>';$('retry').onclick=()=>go(wrong[0]);$('codeForm').onsubmit=event=>{event.preventDefault();const input=$('teacherCode');if(input.value.trim()==='oopk'){unlocked=true;screen='result';render();focus();}else{$('codeError').textContent='Der Code stimmt nicht. Versuch es noch einmal.';input.setAttribute('aria-invalid','true');input.focus();}};}
+function showResult(){
+const score=tasks.filter((q,i)=>answers[i]===q.answer).length;
+main.innerHTML='<div class="brand">'+(solved?'Ziel erreicht':'Mit Lehrercode freigeschaltet')+'</div><h2 style="margin-top:20px">'+(solved?'Alles richtig gelöst.':'Lösungen und deine Antworten')+'</h2><div class="score">'+score+' / 12</div><p class="description">'+(solved?'Jetzt sind alle Lösungen freigeschaltet.':'Vergleiche deine bisherigen Antworten mit den richtigen Lösungen.')+'</p>'+tasks.map((q,i)=>{
+const right=answers[i]===q.answer;
+return '<section class="review"><div class="counter">Aufgabe '+(i+1)+' · '+q.level+' · '+(right?'Richtig':answers[i]===null?'Unbeantwortet':'Falsch')+'</div>'+values(q)+'<code class="expression">'+esc(q.e)+'</code><p>Deine Antwort: <code>'+esc(answers[i]===null?'Keine Antwort':q.options[answers[i]])+'</code><br><strong style="color:#33754f">Richtige Lösung: <code>'+esc(q.options[q.answer])+'</code></strong><br>'+(q.type==='eval'?'<code>'+esc(q.explanation)+'</code>':'Dieser Ausdruck ist bei jeder Belegung von '+variables(q).join(', ')+' gleichwertig.')+'</p></section>';
+}).join('')+'<button class="primary wide" id="again">Neuer Versuch ↺</button>';$('again').onclick=reset;}
+
+function reset(){resetTrigger=document.activeElement;$('resetDialog').showModal();$('cancelReset').focus();}
+function performReset(){clearProgress();answers.fill(null);visited.fill(false);current=0;screen='question';lastCheck=null;checkedAnswers=null;solved=false;unlocked=false;render();showEntry('landing');$('launch').focus({preventScroll:true});}
+$('overview').onclick=()=>{screen='overview';render();focus();};$('nav').onclick=event=>{const button=event.target.closest('[data-go]');if(button)go(Number(button.dataset.go));};main.addEventListener('click',event=>{const button=event.target.closest('[data-task]');if(button)go(Number(button.dataset.task));});$('reset').onclick=reset;
+let resetTrigger=null;
+$('resetDialog').addEventListener('close',()=>{
+if($('resetDialog').returnValue==='reset')performReset();
+else if(resetTrigger&&resetTrigger.isConnected)resetTrigger.focus({preventScroll:true});
+$('resetDialog').returnValue='';
+});
+window.addEventListener('pagehide',saveProgress);
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden')saveProgress();});
+if(restoreProgress()){showEntry('quizApp');render();}else{render();}
+</script></body></html>
